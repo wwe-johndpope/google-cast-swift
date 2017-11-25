@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AF4557A3C523C9CF23C4962 /* Pods_google_cast_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449E812AC8733D4941CAA3EF /* Pods_google_cast_swift.framework */; };
+		3FDF526A1FC930F600EEB0F9 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF52691FC930F600EEB0F9 /* MovieVC.swift */; };
 		3FF76D351FC927460011BCB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76D341FC927460011BCB8 /* AppDelegate.swift */; };
-		3FF76D371FC927460011BCB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76D361FC927460011BCB8 /* ViewController.swift */; };
+		3FF76D371FC927460011BCB8 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76D361FC927460011BCB8 /* MoviesVC.swift */; };
 		3FF76D3A1FC927460011BCB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF76D381FC927460011BCB8 /* Main.storyboard */; };
 		3FF76D3C1FC927460011BCB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF76D3B1FC927460011BCB8 /* Assets.xcassets */; };
 		3FF76D3F1FC927460011BCB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF76D3D1FC927460011BCB8 /* LaunchScreen.storyboard */; };
+		3FF76D471FC92AA20011BCB8 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76D461FC92AA20011BCB8 /* MovieCell.swift */; };
+		3FF76D491FC92AE20011BCB8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76D481FC92AE20011BCB8 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FDF52691FC930F600EEB0F9 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
 		3FF76D311FC927460011BCB8 /* google-cast-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "google-cast-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF76D341FC927460011BCB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FF76D361FC927460011BCB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FF76D361FC927460011BCB8 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
 		3FF76D391FC927460011BCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FF76D3B1FC927460011BCB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FF76D3E1FC927460011BCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FF76D401FC927460011BCB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF76D461FC92AA20011BCB8 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		3FF76D481FC92AE20011BCB8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		449E812AC8733D4941CAA3EF /* Pods_google_cast_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_cast_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55288B118259212621ADD6C5 /* Pods-google-cast-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google-cast-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-google-cast-swift/Pods-google-cast-swift.release.xcconfig"; sourceTree = "<group>"; };
+		BE3E5BC23557225B7F77362C /* Pods-google-cast-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google-cast-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google-cast-swift/Pods-google-cast-swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF4557A3C523C9CF23C4962 /* Pods_google_cast_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		366F5D2F7EB45FAC3DEE65E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE3E5BC23557225B7F77362C /* Pods-google-cast-swift.debug.xcconfig */,
+				55288B118259212621ADD6C5 /* Pods-google-cast-swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3FF76D281FC927460011BCB8 = {
 			isa = PBXGroup;
 			children = (
 				3FF76D331FC927460011BCB8 /* google-cast-swift */,
+				3FF76D381FC927460011BCB8 /* Main.storyboard */,
 				3FF76D321FC927460011BCB8 /* Products */,
+				366F5D2F7EB45FAC3DEE65E2 /* Pods */,
+				9840273101FE231F9E7DA034 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,56 @@
 		3FF76D331FC927460011BCB8 /* google-cast-swift */ = {
 			isa = PBXGroup;
 			children = (
+				3FF76D4D1FC92B9B0011BCB8 /* App */,
+				3FF76D4C1FC92B860011BCB8 /* Controller */,
+				3FF76D4B1FC92B760011BCB8 /* Model */,
+				3FF76D4A1FC92B710011BCB8 /* View */,
+			);
+			path = "google-cast-swift";
+			sourceTree = "<group>";
+		};
+		3FF76D4A1FC92B710011BCB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76D461FC92AA20011BCB8 /* MovieCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FF76D4B1FC92B760011BCB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76D481FC92AE20011BCB8 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FF76D4C1FC92B860011BCB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76D361FC927460011BCB8 /* MoviesVC.swift */,
+				3FDF52691FC930F600EEB0F9 /* MovieVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FF76D4D1FC92B9B0011BCB8 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				3FF76D341FC927460011BCB8 /* AppDelegate.swift */,
-				3FF76D361FC927460011BCB8 /* ViewController.swift */,
-				3FF76D381FC927460011BCB8 /* Main.storyboard */,
 				3FF76D3B1FC927460011BCB8 /* Assets.xcassets */,
 				3FF76D3D1FC927460011BCB8 /* LaunchScreen.storyboard */,
 				3FF76D401FC927460011BCB8 /* Info.plist */,
 			);
-			path = "google-cast-swift";
+			path = App;
+			sourceTree = "<group>";
+		};
+		9840273101FE231F9E7DA034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				449E812AC8733D4941CAA3EF /* Pods_google_cast_swift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FF76D431FC927460011BCB8 /* Build configuration list for PBXNativeTarget "google-cast-swift" */;
 			buildPhases = (
+				A22FF6495B9A050857848C66 /* [CP] Check Pods Manifest.lock */,
 				3FF76D2D1FC927460011BCB8 /* Sources */,
 				3FF76D2E1FC927460011BCB8 /* Frameworks */,
 				3FF76D2F1FC927460011BCB8 /* Resources */,
+				C510F0CDF0DA7F450A30ED85 /* [CP] Embed Pods Frameworks */,
+				A496B0587A3D386A836EC6E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +199,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A22FF6495B9A050857848C66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-google-cast-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A496B0587A3D386A836EC6E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google-cast-swift/Pods-google-cast-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C510F0CDF0DA7F450A30ED85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-google-cast-swift/Pods-google-cast-swift-frameworks.sh",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-Public-3.5.3-Release/GoogleCast.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleCast.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google-cast-swift/Pods-google-cast-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FF76D2D1FC927460011BCB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF76D371FC927460011BCB8 /* ViewController.swift in Sources */,
+				3FF76D371FC927460011BCB8 /* MoviesVC.swift in Sources */,
 				3FF76D351FC927460011BCB8 /* AppDelegate.swift in Sources */,
+				3FF76D491FC92AE20011BCB8 /* Movie.swift in Sources */,
+				3FF76D471FC92AA20011BCB8 /* MovieCell.swift in Sources */,
+				3FDF526A1FC930F600EEB0F9 /* MovieVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +397,12 @@
 		};
 		3FF76D441FC927460011BCB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3E5BC23557225B7F77362C /* Pods-google-cast-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GKETP32D;
-				INFOPLIST_FILE = "google-cast-swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/google-cast-swift/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeremytennant.google-cast-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +413,12 @@
 		};
 		3FF76D451FC927460011BCB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55288B118259212621ADD6C5 /* Pods-google-cast-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3GKETP32D;
-				INFOPLIST_FILE = "google-cast-swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/google-cast-swift/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeremytennant.google-cast-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
