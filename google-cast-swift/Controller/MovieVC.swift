@@ -29,6 +29,7 @@ class MovieVC: UIViewController {
     }
     
     @IBAction func castButtonPressed(_ sender: UIButton) {
+        print("Cast button was pressed")
         
         /*  In your own app, calulate the actual duration of your stream,
             for this example app, I've just made up a value.
@@ -40,10 +41,15 @@ class MovieVC: UIViewController {
         let castSession = GCKCastContext.sharedInstance().sessionManager.currentCastSession
         
         if (castSession != nil) {
+            print("castSession wasn't nil, time to load the media!")
             castSession?.remoteMediaClient?.loadMedia(mediaInfo, autoplay: true)
         }
         
         castSession?.remoteMediaClient?.play()
+        
+        /*
+         Calling a method that requires a media status with no media status, ignoring; make sure that media is loaded, the media channel has received a status, and that this method is not being called while the device manager is attempting to reconnect
+        */
         
         
         
